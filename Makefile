@@ -15,6 +15,10 @@ EXTRAVERSION =
 LOCAL_VERSION =
 CONFIG_LOCALVERSION =
 
+CC=${CROSS_COMPILE}gcc
+LD=${CROSS_COMPILE}ld
+AS=${CROSS_COMPILE}as
+
 CPPFLAGS = -I libfdt -I .
 WARNINGS = -Werror -Wall -Wpointer-arith -Wcast-qual -Wnested-externs \
 	-Wstrict-prototypes -Wmissing-prototypes -Wredundant-decls
